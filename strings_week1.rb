@@ -37,7 +37,12 @@
 #   puts "Your not Santa."
 # end
 
-book_author = "Tim Kasser"
-book_title = "The High Price Of Materialism"
+# book_author = "Tim Kasser"
+# book_title = "The High Price Of Materialism"
 
-puts "A book I did not finish this year is " + book_title + " by " + book_author + "."
+# puts "A book I did not finish this year is " + book_title + " by " + book_author + "."
+
+book_author = "Arthur C. Clark"
+book_title = "Rama"
+
+puts "A book I finished and enjoyed this year is #{book_author}'s #{book_title}."
