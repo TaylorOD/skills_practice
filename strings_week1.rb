@@ -16,7 +16,13 @@
 #   puts "Polo"
 # end
 
+# color1 = "Blue"
+# color2 = "Red"
+# color3 = "Black"
+# puts "My favorite color is " + color1 + " and I also like " + color2 + " and " + color3 + "."
+
 color1 = "Blue"
-color2 = "Red"
-color3 = "Black"
-puts "My favorite color is " + color1 + " and I also like " + color2 + " and " + color3 + "."
+color2 = "Black"
+color3 = "Brown"
+
+puts "I like #{color1} more than I like #{color2} or #{color3}."
