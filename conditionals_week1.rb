@@ -62,12 +62,21 @@
 #   puts 1779
 # end
 
-var = 9
+# var = 9
 
-if var == 100
-  puts 100
-elsif var == 99
-  puts 99
+# if var == 100
+#   puts 100
+# elsif var == 99
+#   puts 99
+# else
+#   puts 0
+# end
+
+var = -1
+var_2 = 60
+
+if var < 0 && var_2 > 0
+  puts 1
 else
   puts 0
 end
