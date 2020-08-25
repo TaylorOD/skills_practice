@@ -21,8 +21,18 @@
 # color3 = "Black"
 # puts "My favorite color is " + color1 + " and I also like " + color2 + " and " + color3 + "."
 
-color1 = "Blue"
-color2 = "Black"
-color3 = "Brown"
+# color1 = "Blue"
+# color2 = "Black"
+# color3 = "Brown"
 
-puts "I like #{color1} more than I like #{color2} or #{color3}."
+# puts "I like #{color1} more than I like #{color2} or #{color3}."
+
+puts "Please type a name:"
+
+input = gets.chomp
+
+if input.upcase == "SANTA"
+  puts "SANTA!"
+else
+  puts "Your not Santa."
+end
