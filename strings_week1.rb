@@ -8,10 +8,15 @@
 
 # puts "Hello #{first_name} #{last_name}!"
 
-puts "Please enter a word!"
+# puts "Please enter a word!"
 
-input = gets.chomp
+# input = gets.chomp
 
-if input.upcase == "MARCO"
-  puts "Polo"
-end
+# if input.upcase == "MARCO"
+#   puts "Polo"
+# end
+
+color1 = "Blue"
+color2 = "Red"
+color3 = "Black"
+puts "My favorite color is " + color1 + " and I also like " + color2 + " and " + color3 + "."
