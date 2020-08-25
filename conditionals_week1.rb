@@ -72,11 +72,25 @@
 #   puts 0
 # end
 
-var = -1
-var_2 = 60
+# var = -1
+# var_2 = 60
 
-if var < 0 && var_2 > 0
-  puts 1
+# if var < 0 && var_2 > 0
+#   puts 1
+# else
+#   puts 0
+# end
+
+var = 30
+
+if var > 80
+  puts 5
+elsif var > 60
+  puts 4
+elsif var > 40
+  puts 3
+elsif var > 20
+  puts 2
 else
-  puts 0
+  puts 1
 end
