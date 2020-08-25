@@ -1,55 +1,63 @@
-# # # var = 0
+# # # # var = 0
 
-# # # if var == 10
-# # #   puts "0"
+# # # # if var == 10
+# # # #   puts "0"
+# # # # else
+# # # #   puts "-1"
+# # # # end
+
+# # # # var = 1
+
+# # # # if var < 10
+# # # #   puts "-1"
+# # # # elsif var > 10
+# # # #   puts "0"
+# # # # elsif var == 10
+# # # #   puts "0"
+# # # # end
+
+# # # # var = 1
+# # # # var_2 = 2
+
+# # # # if var < 10 || var_2 < 10
+# # # #   puts "1"
+# # # # else
+# # # #   puts "0"
+# # # # end
+
+# # # var = 150
+
+# # # if var > 9000
+# # #   puts 1
 # # # else
-# # #   puts "-1"
+# # #   puts -1
 # # # end
 
-# # # var = 1
+# # var = 28
 
-# # # if var < 10
-# # #   puts "-1"
-# # # elsif var > 10
-# # #   puts "0"
-# # # elsif var == 10
-# # #   puts "0"
-# # # end
-
-# # # var = 1
-# # # var_2 = 2
-
-# # # if var < 10 || var_2 < 10
-# # #   puts "1"
-# # # else
-# # #   puts "0"
-# # # end
-
-# # var = 150
-
-# # if var > 9000
-# #   puts 1
+# # if var < 10
+# #   puts 9
+# # elsif var < 20
+# #   puts 19
+# # elsif var < 30
+# #   puts 29
 # # else
 # #   puts -1
 # # end
 
-# var = 28
+# var = 9
+# var_2 = 9843
 
-# if var < 10
-#   puts 9
-# elsif var < 20
-#   puts 19
-# elsif var < 30
-#   puts 29
+# if var > 10 || var_2 > 10
+#   puts 100
 # else
-#   puts -1
+#   puts -100
 # end
 
-var = 9
-var_2 = 9843
+var = -5
 
-if var > 10 || var_2 > 10
-  puts 100
+if var < 0
+  puts 1776
 else
-  puts -100
+  puts 1779
 end
