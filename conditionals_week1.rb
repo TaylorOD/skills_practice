@@ -16,11 +16,19 @@
 #   puts "0"
 # end
 
-var = 1
-var_2 = 2
+# var = 1
+# var_2 = 2
 
-if var < 10 || var_2 < 10
-  puts "1"
+# if var < 10 || var_2 < 10
+#   puts "1"
+# else
+#   puts "0"
+# end
+
+var = 150
+
+if var > 9000
+  puts 1
 else
-  puts "0"
+  puts -1
 end
