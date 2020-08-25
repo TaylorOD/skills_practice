@@ -47,11 +47,18 @@
 
 # puts "A book I finished and enjoyed this year is #{book_author}'s #{book_title}."
 
-puts "Please insert the password:"
-input = gets.chomp
+# puts "Please insert the password:"
+# input = gets.chomp
 
-if input.upcase == "JOSHUA"
-  puts "Shall we play a game?"
-else
-  puts "Access Denied."
-end
+# if input.upcase == "JOSHUA"
+#   puts "Shall we play a game?"
+# else
+#   puts "Access Denied."
+# end
+
+city1 = "Barre"
+city2 = "Montpillier"
+city3 = "Burlington"
+
+puts "Three cities in Vermont are " + city1 + ", " + city2 + ", " + "and " + city3 + "."
+puts "Three cities in Vermont are #{city1}, #{city2}, and #{city3}."
