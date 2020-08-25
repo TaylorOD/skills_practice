@@ -54,10 +54,20 @@
 #   puts -100
 # end
 
-var = -5
+# var = -5
 
-if var < 0
-  puts 1776
+# if var < 0
+#   puts 1776
+# else
+#   puts 1779
+# end
+
+var = 9
+
+if var == 100
+  puts 100
+elsif var == 99
+  puts 99
 else
-  puts 1779
+  puts 0
 end
