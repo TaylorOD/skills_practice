@@ -42,7 +42,16 @@
 
 # puts "A book I did not finish this year is " + book_title + " by " + book_author + "."
 
-book_author = "Arthur C. Clark"
-book_title = "Rama"
+# book_author = "Arthur C. Clark"
+# book_title = "Rama"
 
-puts "A book I finished and enjoyed this year is #{book_author}'s #{book_title}."
+# puts "A book I finished and enjoyed this year is #{book_author}'s #{book_title}."
+
+puts "Please insert the password:"
+input = gets.chomp
+
+if input.upcase == "JOSHUA"
+  puts "Shall we play a game?"
+else
+  puts "Access Denied."
+end
