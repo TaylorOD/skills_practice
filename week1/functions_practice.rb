@@ -28,8 +28,14 @@
 
 # puts string_space("Bob Jones", "Liberty University", "Anderson College")
 
-def number_to_string(number)
-  return number.to_s
+# def number_to_string(number)
+#   return number.to_s
+# end
+
+# p number_to_string(100)
+
+def string_5x(string)
+  return string * 5
 end
 
-p number_to_string(100)
+puts string_5x("bobbie")
