@@ -10,8 +10,14 @@
 
 # puts all_cap("hello")
 
-def sub1_2(number1, number2)
-  return number1 - number2
+# def sub1_2(number1, number2)
+#   return number1 - number2
+# end
+
+# puts sub1_2(10, 11)
+
+def time_itself(number)
+  return number * number
 end
 
-puts sub1_2(10, 11)
+puts time_itself(10)
