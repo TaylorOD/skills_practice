@@ -22,8 +22,14 @@
 
 # puts time_itself(10)
 
-def string_space(string1, string2, string3)
-  return string1 + " " + string2 + " " + string3
+# def string_space(string1, string2, string3)
+#   return string1 + " " + string2 + " " + string3
+# end
+
+# puts string_space("Bob Jones", "Liberty University", "Anderson College")
+
+def number_to_string(number)
+  return number.to_s
 end
 
-puts string_space("Bob Jones", "Liberty University", "Anderson College")
+p number_to_string(100)
