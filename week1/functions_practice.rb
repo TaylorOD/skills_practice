@@ -46,8 +46,14 @@
 
 # puts average(100, 67, 85)
 
-def string_first(string)
-  return string[0]
+# def string_first(string)
+#   return string[0]
+# end
+
+# puts string_first("Taylor")
+
+def number_times_plus(number)
+  return (number * 10) + 30
 end
 
-puts string_first("Taylor")
+puts number_times_plus(100)
