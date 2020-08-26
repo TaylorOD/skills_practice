@@ -40,8 +40,14 @@
 
 # puts string_5x("bobbie")
 
-def average(number1, number2, number3)
-  return (number1 + number2 + number3) / 3
+# def average(number1, number2, number3)
+#   return (number1 + number2 + number3) / 3
+# end
+
+# puts average(100, 67, 85)
+
+def string_first(string)
+  return string[0]
 end
 
-puts average(100, 67, 85)
+puts string_first("Taylor")
