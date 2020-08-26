@@ -34,8 +34,14 @@
 
 # p number_to_string(100)
 
-def string_5x(string)
-  return string * 5
+# def string_5x(string)
+#   return string * 5
+# end
+
+# puts string_5x("bobbie")
+
+def average(number1, number2, number3)
+  return (number1 + number2 + number3) / 3
 end
 
-puts string_5x("bobbie")
+puts average(100, 67, 85)
