@@ -16,8 +16,14 @@
 
 # puts sub1_2(10, 11)
 
-def time_itself(number)
-  return number * number
+# def time_itself(number)
+#   return number * number
+# end
+
+# puts time_itself(10)
+
+def string_space(string1, string2, string3)
+  return string1 + " " + string2 + " " + string3
 end
 
-puts time_itself(10)
+puts string_space("Bob Jones", "Liberty University", "Anderson College")
