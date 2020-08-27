@@ -48,3 +48,10 @@
 #   puts i
 #   i += 1
 # end
+
+i = 0
+
+while i < 144
+  p "Around the world"
+  i += 1
+end
