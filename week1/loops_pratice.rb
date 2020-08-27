@@ -19,3 +19,10 @@
 #     break
 #   end
 # end
+
+i = 5
+
+while i <= 100
+  puts i
+  i += 5
+end
