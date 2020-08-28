@@ -49,8 +49,17 @@
 
 # p strings
 
-numbs = [77, 10990, 340928, 4, 2399]
+# numbs = [77, 10990, 340928, 4, 2399]
 
-numbs[0] = numbs[0] * 10
+# numbs[0] = numbs[0] * 10
 
-p numbs
+# p numbs
+
+numbies = [100, 900]
+
+i = 0
+
+while i < numbies.length
+  puts numbies[i]
+  i += 1
+end
