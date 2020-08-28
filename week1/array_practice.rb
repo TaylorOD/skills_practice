@@ -34,11 +34,23 @@
 
 # p lower_case
 
-names = ["Gerald", "Andrew", "Robin"]
+# names = ["Gerald", "Andrew", "Robin"]
 
-i = 0
+# i = 0
 
-while i < names.length
-  p names[i]
-  i += 1
-end
+# while i < names.length
+#   p names[i]
+#   i += 1
+# end
+
+# strings = ["Andrew Dog", "Dog of Andrew"]
+
+# strings << "Andrew of Dog"
+
+# p strings
+
+numbs = [77, 10990, 340928, 4, 2399]
+
+numbs[0] = numbs[0] * 10
+
+p numbs
