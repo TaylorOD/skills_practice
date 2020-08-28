@@ -28,8 +28,17 @@
 
 # p one_line
 
-lower_case = ["strings", "lower", "case"]
+# lower_case = ["strings", "lower", "case"]
 
-lower_case[2] = lower_case[2].upcase
+# lower_case[2] = lower_case[2].upcase
 
-p lower_case
+# p lower_case
+
+names = ["Gerald", "Andrew", "Robin"]
+
+i = 0
+
+while i < names.length
+  p names[i]
+  i += 1
+end
