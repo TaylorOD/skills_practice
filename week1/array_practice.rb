@@ -5,8 +5,12 @@
 
 # p three_words
 
-four_array = ["g", "h", "j", "l"]
+# four_array = ["g", "h", "j", "l"]
 
-four_array[1] = 9
+# four_array[1] = 9
 
-p four_array
+# p four_array
+
+five_numbers = [5, 6, 9, 10, 44]
+
+puts five_numbers
