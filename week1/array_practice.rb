@@ -55,11 +55,17 @@
 
 # p numbs
 
-numbies = [100, 900]
+# numbies = [100, 900]
 
-i = 0
+# i = 0
 
-while i < numbies.length
-  puts numbies[i]
-  i += 1
-end
+# while i < numbies.length
+#   puts numbies[i]
+#   i += 1
+# end
+
+countries = ["South Africa", "USA", "Brazil"]
+
+countries << "England"
+
+p countries
