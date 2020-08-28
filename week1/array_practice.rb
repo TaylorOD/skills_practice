@@ -13,4 +13,9 @@
 
 five_numbers = [5, 6, 9, 10, 44]
 
-puts five_numbers
+i = 0
+
+while i < five_numbers.length
+  p five_numbers[i]
+  i += 1
+end
