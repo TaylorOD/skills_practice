@@ -392,3 +392,129 @@
 # end
 
 # p product_combo
+
+#  10. Use a nested loop to find the largest sum of any two different numbers within an array.
+#     For example, [1, 8, 3, 10] becomes 18.
+
+# array_of_numbers = [1, 8, 3, 10]
+# largest_sum = array_of_numbers[0] + array_of_numbers[1]
+
+# index = 0
+
+# while index < array_of_numbers.length
+#   index1 = 0
+#   while index1 < array_of_numbers.length
+#     if index != index1
+#       current_sum = array_of_numbers[index] + array_of_numbers[index1]
+#       if current_sum > largest_sum
+#         largest_sum = current_sum
+#       end
+#     end
+#     index1 += 1
+#   end
+#   index += 1
+# end
+
+# p largest_sum
+
+#  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+#     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
+
+# array_of_num = [2, 5, 3, 1, 0, 7, 11]
+# ten_array = []
+
+# index = 0
+
+# while index < array_of_num.length
+#   index1 = 0
+#   while index1 < array_of_num.length
+#     if index != index1
+#       ten = array_of_num[index] + array_of_num[index1]
+#       if ten == 10
+#         ten_array << array_of_num[index]
+#         ten_array << array_of_num[index1]
+#         index + array_of_num.length
+#         index1 + array_of_num.length
+#       elsif ten != 10
+#         puts false
+#       end
+#     end
+#     index1 += 1
+#   end
+#   index += 1
+# end
+
+# p ten_array
+
+# # setting up array
+# numbers = [2, 5, 3, 1, 0, 7, 11]
+# # creating variable result that is set to false. This can be rewritten as an array but for now will print if
+# # their are no numbers that equal 10
+# result = false
+# # establishing first index
+# index1 = 0
+# # while index loop to run all numbers
+# while index1 < numbers.length
+#   # establishing current number so we have the first number to run
+#   current_number = numbers[index1]
+#   # establishing the second index
+#   index2 = 0
+#   # while index 2 loop
+#   while index2 < numbers.length
+#     # code that will make sure both indexs are not the same
+#     if index1 != index2
+#       # establihsing the second index as 0
+#       other_number = numbers[index2]
+#       # if statement that adds teh two numbers (I did this with a varraible) and needs the result to be false
+#       # so it doesnt run again
+#       if current_number + other_number == 10 && result == false
+#         # this sets the result as the two numbers
+#         result = [current_number, other_number]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+# p result
+
+# array_of_numbers = [2, 5, 3, 1, 0, 7, 11]
+# result = false
+
+# index1 = 0
+# while index1 < array_of_numbers.length
+#   index2 = 0
+#   while index2 < array_of_numbers.length
+#     if index1 != index2
+#       if array_of_numbers[index1] + array_of_numbers[index2] == 10 && result == false
+#         result = [array_of_numbers[index1], array_of_numbers[index2]]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p result
+
+# 10. Use a nested loop to convert an array of string arrays into a single string.
+#     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+# array_of_strings = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# single_string = ""
+
+# index1 = 0
+# while index1 < array_of_strings.length
+#   array_of_strings_down_one = array_of_strings[index1]
+#   index2 = 0
+#   while index2 < array_of_strings_down_one.length
+#     array_of_strings_down_two = array_of_strings_down_one[index2]
+#     single_string << array_of_strings_down_two
+
+#     index2 += 1
+#   end
+
+#   index1 += 1
+# end
+
+# p single_string
