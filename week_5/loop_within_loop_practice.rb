@@ -104,14 +104,103 @@
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
+# array_of_numbers_one = [1, 2]
+# array_of_numbers_two = [6, 7, 8]
+# added_array = []
+
+# index1 = 0
+# while index1 < array_of_numbers_one.length
+#   index2 = 0
+#   while index2 < array_of_numbers_two.length
+#     added_array << array_of_numbers_one[index1] + array_of_numbers_two[index2]
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p added_array
+
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+# array_of_numbers = [2, 8, 3]
+# combination_array = []
+# index1 = 0
+
+# while index1 < array_of_numbers.length
+#   index2 = 0
+#   while index2 < array_of_numbers.length
+#     combination_array << array_of_numbers[index1] * array_of_numbers[index2]
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p combination_array
 
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
 
+# array_of_numbers = [1, 8, 3, 10]
+# largest_sum = array_of_numbers[0] + array_of_numbers[1]
+# index1 = 0
+
+# while index1 < array_of_numbers.length
+#   first_number = array_of_numbers[index1]
+#   index2 = 0
+#   while index2 < array_of_numbers.length
+#     second_number = array_of_numbers[index2]
+#     if index1 != index2
+#       if first_number + second_number > largest_sum
+#         largest_sum = first_number + second_number
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p largest_sum
+
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
+# array_of_numbers = [2, 5, 3, 1, 0, 7, 11]
+# first_pair_to_ten = false
+# index1 = 0
+
+# while index1 < array_of_numbers.length
+#   first_number = array_of_numbers[index1]
+#   index2 = 0
+#   while index2 < array_of_numbers.length
+#     second_number = array_of_numbers[index2]
+#     if index1 != index2
+#       if first_number + second_number == 10 && first_pair_to_ten == false
+#         first_pair_to_ten = [first_number, second_number]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p first_pair_to_ten
+
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+# array_of_strings = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# single_string = ""
+# index1 = 0
+
+# while index1 < array_of_strings.length
+#   index2 = 0
+#   while index2 < array_of_strings[index1].length
+#     single_string = single_string + array_of_strings[index1][index2]
+
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p single_string
