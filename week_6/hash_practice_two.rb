@@ -57,10 +57,46 @@
 
 # 6. Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
 
+# states_info = {
+#   California: "Sacramento",
+#   Colorado: "Denver",
+#   Florida: "Tallahassee",
+# }
+# states_info[:Illinois] = "Springfield"
+# p states_info
+
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
+
+# laptop_info = { brand: "Apple", model: "Macbook Air", year: 2019 }
+# p laptop_info[:brand]
+# p laptop_info[:model]
+# p laptop_info[:year]
 
 # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
 
+# laptops_info = [{ brand: "Apple", model: "Macbook Air", year: 2019 },
+#                 { brand: "Lenovo", model: "Kiper", year: 2019 },
+#                 { brand: "Razer", model: "Razer v2", year: 2019 }]
+
+# p laptops_info[1][:model]
+
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+# definitions = {
+#   procollagen: "The soluble precursor of collagen possibly formed by frbioblasts",
+#   elan: "Dash",
+# }
+# definitions[:finagle] = "To get or achieve something by guile tickery or manipulation"
+# p definitions
+
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+# shirt = {
+#   brand: "Hanes",
+#   color: "Black",
+#   size: "L",
+# }
+
+# p shirt[:brand]
+# p shirt[:color]
+# p shirt[:size]
