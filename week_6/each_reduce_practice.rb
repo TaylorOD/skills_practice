@@ -2,6 +2,23 @@
 #     For example, [5, 10, 8, 3] becomes 26.
 #     Use a .each then a .reduce
 
+# .each
+
+# numbers = [5, 10, 8, 3]
+# sum = 0
+# numbers.each do |number|
+#   sum = number + sum
+# end
+# p sum
+
+#  .map
+
+# numbers = [5, 10, 8, 3]
+# sum = numbers.reduce(0) do |sum, number|
+#   number + sum
+# end
+# p sum
+
 #  2. Start with an array of strings and combine them all into a single string.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
 #     Use a .each then a .reduce
