@@ -3,14 +3,32 @@
 
 // forEach
 
+// let numbers = [1, 2, 3]
+// let numbersTimesThree = []
+// numbers.forEach(function (number) {
+//   numbersTimesThree.push(number * 3)
+// })
+// console.log(numbersTimesThree)
 
 // .map
+
+let numbers = [1, 2, 3]
+let numbersTimesThree = numbers.map(function (number) {
+  number * 3
+})
+console.log(numbersTimesThree)
 
 // #  2. Start with an array of strings and create a new array with each string upcased.
 // #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"]. Use forEach and .map.
 
 // forEach
 
+let words = ["hello", "goodbye"]
+let wordsCaps = []
+words.forEach(function (word) {
+  wordsCaps.push(word[0].toUpperCase())
+})
+console.log(wordsCaps)
 
 // .map
 
@@ -19,14 +37,12 @@
 
 // forEach
 
-
 // .map
 
 // #  4. Start with an array of numbers and create a new array with each number plus 7.
 // #     For example, [1, 2, 3] becomes [8, 9, 10]. Use forEach and .map.
 
 // forEach
-
 
 // .map
 
@@ -35,14 +51,12 @@
 
 // forEach
 
-
 // .map
 
 // #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16]. Use forEach and .map.
 
 // forEach
-
 
 // .map
 
@@ -51,14 +65,12 @@
 
 // forEach
 
-
 // .map
 
 // #  8. Start with an array of strings and create a new array with each string's first letter only.
 // #     For example, ["hello", "goodbye"] becomes ["h", "g"]. Use forEach and .map.
 
 // forEach
-
 
 // .map
 
@@ -67,13 +79,11 @@
 
 // forEach
 
-
 // .map
 
 // # 10. Start with an array of numbers and create a new array with each number converted into a string.
 // #     For example, [1, 2, 3] becomes ["1", "2", "3"]. Use forEach and .map.
 
 // forEach
-
 
 // .map
