@@ -53,11 +53,11 @@
 
 # .map
 
-peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
-peoples_names = peoples_info.map do |person|
-  person[:name]
-end
-p peoples_names
+# peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
+# peoples_names = peoples_info.map do |person|
+#   person[:name]
+# end
+# p peoples_names
 
 #  4. Start with an array of numbers and create a new array with each number plus 7.
 #     For example, [1, 2, 3] becomes [8, 9, 10].
@@ -105,19 +105,19 @@ p peoples_names
 # .each
 
 # peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
-# ages = []
-# peoples_info.each do |people|
-#   ages << people[:age]
+# peoples_ages = []
+# peoples_info.each do |person|
+#   peoples_ages << person[:age]
 # end
-# p ages
+# p peoples_ages
 
 # .map
 
 # peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
-# ages = peoples_info.map do |people|
-#   people[:age]
+# peoples_ages = peoples_info.map do |person|
+#   person[:age]
 # end
-# p ages
+# p peoples_ages
 
 #  7. Start with an array of numbers and create a new array with each number divided by 2.
 #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
@@ -125,19 +125,19 @@ p peoples_names
 # .each
 
 # numbers = [1, 2, 3]
-# divided_numbers = []
+# numbers_half = []
 # numbers.each do |number|
-#   divided_numbers << number.to_f / 2
+#   numbers_half << number / 2.to_f
 # end
-# p divided_numbers
+# p numbers_half
 
 # .map
 
 # numbers = [1, 2, 3]
-# divided_numbers = numbers.map do |number|
-#   number.to_f / 2
+# numbers_half = numbers.map do |number|
+#   number / 2.to_f
 # end
-# p divided_numbers
+# p numbers_half
 
 #  8. Start with an array of strings and create a new array with each string's first letter only.
 #     For example, ["hello", "goodbye"] becomes ["h", "g"].
@@ -145,19 +145,19 @@ p peoples_names
 # .each
 
 # strings = ["hello", "goodbye"]
-# first = []
+# strings_first = []
 # strings.each do |string|
-#   first << string[0]
+#   strings_first << string[0]
 # end
-# p first
+# p strings_first
 
 # .map
 
 # strings = ["hello", "goodbye"]
-# first = strings.map do |string|
+# strings_first = strings.map do |string|
 #   string[0]
 # end
-# p first
+# p strings_first
 
 # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
@@ -165,19 +165,19 @@ p peoples_names
 # .each
 
 # peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
-# ages_times_two = []
-# peoples_info.each do |age|
-#   ages_times_two << age[:age] * 2
+# peoples_ages_times_two = []
+# peoples_info.each do |people|
+#   peoples_ages_times_two << people[:age] * 2
 # end
-# p ages_times_two
+# p peoples_ages_times_two
 
 # .map
 
 # peoples_info = [{ name: "Alice", age: 27 }, { name: "Blane", age: 16 }]
-# ages_times_two = peoples_info.map do |age|
-#   age[:age] * 2
+# peoples_ages_times_two = peoples_info.map do |people|
+#   people[:age] * 2
 # end
-# p ages_times_two
+# p peoples_ages_times_two
 
 # 10. Start with an array of numbers and create a new array with each number converted into a string.
 #     For example, [1, 2, 3] becomes ["1", "2", "3"].
@@ -185,10 +185,16 @@ p peoples_names
 # .each
 
 # numbers = [1, 2, 3]
-# strings = []
+# numbers_strings = []
 # numbers.each do |number|
-#   strings << number.to_s
+#   numbers_strings << number.to_s
 # end
-# p strings
+# p numbers_strings
 
 # .map
+
+# numbers = [1, 2, 3]
+# numbers_strings = numbers.map do |number|
+#   number.to_s
+# end
+# p numbers_strings
