@@ -30,6 +30,18 @@
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
+numbers = ["a", "b", "c", "d"]
+result = []
+
+numbers.each do |number|
+  numbers.each do |number_two|
+    if number[0] != number_two[0]
+      result << number + number_two
+    end
+  end
+end
+p result
+
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
 

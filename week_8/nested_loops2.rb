@@ -1,9 +1,14 @@
-
 #  1. Use a nested loop to convert an array of number pairs into a single flattened array.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
 # numbers = [[1, 3], [8, 9], [2, 16]]
-
+# result = []
+# numbers.each do |number_pairs|
+#   number_pairs.each do |number|
+#     result << number
+#   end
+# end
+# p result
 
 #  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 #     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
@@ -11,32 +16,156 @@
 # strings_one = ["a", "b", "c"]
 # strings_two = ["d", "e", "f", "g"]
 # result = []
-
-
+# strings_one.each do |first_string|
+#   strings_two.each do |second_string|
+#     result << first_string + second_string
+#   end
+# end
+# p result
 
 #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
 
+# strings = ["a", "b", "c", "d"]
+# result = []
+# index1 = 0
+# while index1 < strings.length
+#   index2 = 0
+#   while index2 < strings.length
+#     if index1 != index2
+#       result << strings[index1] + strings[index2]
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+# p result
+
 #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+
+# numbers = [5, -2, 1, -9, -7, 2, 6]
+# largest_product = numbers[0] * numbers[1]
+# index1 = 0
+
+# while index1 < numbers.length
+#   index2 = 0
+#   while index2 < numbers.length
+#     if index1 != index2
+#       if numbers[index1] * numbers[index2] > largest_product
+#         largest_product = numbers[index1] * numbers[index2]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+# p largest_product
 
 #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 
 # number_pairs = [[1, 3], [8, 9], [2, 16]]
-# flat_numbers = 0
+# sum = 0
+# number_pairs.each do |number_pairs_array|
+#   number_pairs_array.each do |numbers|
+#     sum = sum + numbers
+#   end
+# end
+# p sum
 
 #  6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
 #     For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
 
+# numbers_one = [1, 2]
+# numbers_two = [6, 7, 8]
+# result = []
+# numbers_one.each do |numbers_one|
+#   numbers_two.each do |numbers_two|
+#     result << numbers_one + numbers_two
+#   end
+# end
+# p result
+
 #  7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 #     For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+
+# numbers = [2, 8, 3]
+# result = []
+# index1 = 0
+# while index1 < numbers.length
+#   index2 = 0
+#   while index2 < numbers.length
+#     result << numbers[index1] * numbers[index2]
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p result
+
+# numbers = [2, 8, 3]
+# result = []
+# numbers.each do |numbers_one|
+#   numbers.each do |numbers_two|
+#     result << numbers_one * numbers_two
+#   end
+# end
+
+# p result
 
 #  8. Use a nested loop to find the largest sum of any two different numbers within an array.
 #     For example, [1, 8, 3, 10] becomes 18.
 
+# numbers = [1, 8, 3, 10]
+# largest_sum = numbers[0] + numbers[1]
+# index1 = 0
+# while index1 < numbers.length
+#   index2 = 0
+#   while index2 < numbers.length
+#     if index1 != index2
+#       if numbers[index1] + numbers[index2] > largest_sum
+#         largest_sum = numbers[index1] + numbers[index2]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+# p largest_sum
+
 #  9. Use nested loops with an array of numbers to compute a new array containing the first two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
 #     For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
 
+# numbers = [2, 5, 3, 1, 0, 7, 11]
+# index1 = 0
+# result = false
+
+# while index1 < numbers.length
+#   index2 = 0
+#   while index2 < numbers.length
+#     if index1 != index2
+#       if numbers[index1] + numbers[index2] == 10 || result == false
+#         result = [numbers[index1], numbers[index2]]
+#       end
+#     end
+#     index2 += 1
+#   end
+#   index1 += 1
+# end
+
+# p result
+
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 #     For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+
+# strings = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# single_string = ""
+
+# strings.each do |string_array|
+#   string_array.each do |string|
+#     single_string = single_string + string
+#   end
+# end
+
+# p single_string
