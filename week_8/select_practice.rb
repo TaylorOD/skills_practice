@@ -46,24 +46,44 @@
 #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
-items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# shorter_than_six = items.select do |item|
+#   item[:name].length < 6
+# end
+# p shorter_than_six
 
 #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
 
-numbers = [8, 23, 0, 44, 1980, 3]
+# numbers = [8, 23, 0, 44, 1980, 3]
+# numbers_less_than_ten = numbers.select do |number|
+#   number < 10
+# end
+# p numbers_less_than_ten
 
 #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
 
-words = ["big", "little", "good", "bad"]
+# words = ["big", "little", "good", "bad"]
+# other_than_b_words = words.select do |word|
+#   word[0].downcase != "b"
+# end
+# p other_than_b_words
 
 #  9. Start with an array of hashes and create a new array with only the hashes with prices less than 10 (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
 
-items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# items_less_than_ten = items.select do |item|
+#   item[:price] < 10
+# end
+# p items_less_than_ten
 
 # 10. Start with an array of numbers and create a new array with only the odd numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
 
-numbers = [2, 4, 5, 1, 8, 9, 7]
+# numbers = [2, 4, 5, 1, 8, 9, 7]
+# odd_numbers = numbers.select do |number|
+#   number % 2 == 1
+# end
+# p odd_numbers
