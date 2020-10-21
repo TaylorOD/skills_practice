@@ -51,17 +51,38 @@
 #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
 # numbers = [2, 32, 80, 18, 12, 3]
+# less_than_twenty = numbers.select do |number|
+#   number < 20
+# end
+# p less_than_twenty
 
 #  7. Start with an array of numbers and create a new array with only the even numbers.
 #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
 
 # numbers = [2, 4, 5, 1, 8, 9, 7]
+# even_numbers = numbers.select do |number|
+#   number % 2 == 0
+# end
+# p even_numbers
 
 #  9. Start with an array of numbers and compute product of all the numbers.
 
 # numbers = [5, 10, 8, 3]
+# sum = 1
+# numbers.each do |number|
+#   sum *= number
+# end
+# p sum
 
 #  10. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
 
 # items = [{ name: "chair", price: 100 }, { name: "pencil", price: 1 }, { name: "book", price: 4 }]
+# lowest_price = items[0]
+
+# items.each do |item|
+#   if item[:price] < lowest_price[:price]
+#     lowest_price = item
+#   end
+# end
+# p lowest_price
