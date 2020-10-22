@@ -1,5 +1,3 @@
-// todo all 10
-
 // # 1. Create an array to store 5 numbers. Then print out each number on separate lines with a while loop.
 
 // let numbers = [1, 2, 3, 4, 5]

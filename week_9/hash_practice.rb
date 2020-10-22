@@ -1,4 +1,4 @@
-todo all ten
+#  todo all 10
 
 # 1. Make a hash to store a person's first name, last name, and email address. Then print each attribute on separate lines.
 
@@ -7,15 +7,15 @@ todo all ten
 #   last_name: "Dorsett",
 #   email: "taylordorsett@gmail.com",
 # }
-# puts person_info[:first_name]
-# puts person_info[:last_name]
-# puts person_info[:email]
+# p person_info[:first_name]
+# p person_info[:last_name]
+# p person_info[:email]
 
 # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
 # full_names = [{ first_name: "Taylor", last_name: "Dorsett" }, { first_name: "Leah", last_name: "Shaw" }, { first_name: "Jonas", last_name: "Dorsett" }]
 
-# puts full_names[0]
+# p full_names[0]
 
 # 3. Make a hash to store prices for 3 different menu items. Then add a new menu item and price and print the hash to see the result.
 
@@ -24,14 +24,14 @@ todo all ten
 #   fries: 3.50,
 #   apple: 1.50,
 # }
-# menu[:pie] = 5
+# menu[:coke] = 10
 # p menu
 
 # 4. Make a hash to store a book's title, author, number of pages, and language. Then print each attribute on separate lines.
 
 # book_info = {
 #   title: "Head Off",
-#   author: "John Scalzie",
+#   author: "John Scalzi",
 #   number_of_pages: 156,
 #   language: "English",
 # }
@@ -55,7 +55,7 @@ todo all ten
 #   author: "John Guitar",
 # }]
 
-# puts books_info[2]
+# p books_info[2][:author]
 
 # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
 
@@ -64,8 +64,9 @@ todo all ten
 #   alaska: "Juneau",
 #   arizona: "Phoenix",
 # }
-# states_info[:arkansas] = "Little Rock"
-# puts states_info
+
+# states_info[:vermont] = "Burlington"
+# p states_info
 
 # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
@@ -74,6 +75,7 @@ todo all ten
 #   model: "Notebook 7",
 #   year: 2017,
 # }
+
 # p laptop[:brand]
 # p laptop[:model]
 # p laptop[:year]
@@ -93,6 +95,7 @@ todo all ten
 #   model: "Blade Stealth 14'",
 #   year: 2019,
 # }]
+
 # p laptops_info[1][:model]
 
 # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
@@ -101,16 +104,18 @@ todo all ten
 #   articulate: "expressing oneself readily, clearly, and effectively",
 #   formulate: "to reduce to or express in a formula",
 # }
-# definitions[:express] = "to represent in words"
+
+# definitions[:cat] = "Somewhat domesticated animal"
 # p definitions
 
 # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
 
-# shirt_info = {
-#   brand: "Hanes",
-#   color: "Blue",
-#   size: "L",
-# }
-# p shirt_info[:brand]
-# p shirt_info[:color]
-# p shirt_info[:size]
+shirt_info = {
+  brand: "Hanes",
+  color: "Blue",
+  size: "L",
+}
+
+p shirt_info[:brand]
+p shirt_info[:color]
+p shirt_info[:size]
