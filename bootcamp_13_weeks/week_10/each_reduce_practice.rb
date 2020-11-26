@@ -9,17 +9,19 @@
 # numbers = [5, 10, 8, 3]
 # sum = 0
 # numbers.each do |number|
-#   sum = number + sum
+#   sum += number
 # end
 # p sum
 
 #  .reduce
 
-# numbers = [5, 10, 8, 3]
-# sum = numbers.reduce(0) do |sum, number|
-#   number + sum
-# end
-# p sum
+numbers = [5, 10, 8, 3]
+sum = numbers.reduce(0) do |sum, number|
+  sum + number
+end
+p sum
+
+
 
 #  2. Start with an array of strings and combine them all into a single string.
 #     For example, ["volleyball", "basketball", "badminton"] becomes "volleyballbasketballbadminton".
