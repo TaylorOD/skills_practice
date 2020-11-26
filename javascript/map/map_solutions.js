@@ -79,6 +79,16 @@ console.log(peopleAgesLong)
 // 7. Start with an array of numbers and create a new array with each number divided by 2.
 // For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
 
+const arrayNumbers = [1, 2, 3]
+
+const numbersHalved = arrayNumbers.map(number => number / 2)
+console.log(numbersHalved)
+
+const numbersHalvedLong = arrayNumbers.map(function(number) {
+  return number / 2
+})
+console.log(numbersHalvedLong)
+
 // 8. Start with an array of strings and create a new array with each string's first letter only.
 // For example, ["hello", "goodbye"] becomes ["h", "g"].
 
