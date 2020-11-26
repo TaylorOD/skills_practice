@@ -40,6 +40,16 @@ console.log(peopleNamesLong)
 // 4. Start with an array of numbers and create a new array with each number plus 7.
 // For example, [1, 2, 3] becomes [8, 9, 10].
 
+const numbersArray = [1, 2, 3]
+
+const numbersPlusSeven = numbersArray.map(number => number + 7)
+console.log(numbersPlusSeven)
+
+const numbersPlusSevenLong = numbersArray.map(function(number) {
+  return number + 7
+})
+console.log(numbersPlusSevenLong)
+
 // 5. Start with an array of strings and create a new array with each string's length.
 // For example, ["hello", "goodbye"] becomes [5, 7].
 
