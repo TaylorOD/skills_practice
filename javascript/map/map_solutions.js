@@ -92,6 +92,16 @@ console.log(numbersHalvedLong)
 // 8. Start with an array of strings and create a new array with each string's first letter only.
 // For example, ["hello", "goodbye"] becomes ["h", "g"].
 
+const stringArray = ["hello", "goodbye"]
+
+const stringFirst = stringArray.map(string => string[0])
+console.log(stringFirst)
+
+const stringFirstLong = stringArray.map(function(string) {
+  return string[0]
+})
+console.log(stringFirstLong)
+
 // 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 // For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32].
 
