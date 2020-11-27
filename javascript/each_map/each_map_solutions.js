@@ -57,8 +57,29 @@ console.log(stringsUpcasedMapLong)
 
 // .forEach
 
+let peopleInfo = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+let peoplesName = []
+
+peopleInfo.forEach(function(person) {
+  peoplesName.push(person.name)
+})
+console.log(peoplesName)
+
+let peoplesNames = []
+
+peopleInfo.forEach(person => peoplesNames.push(person.name))
+console.log(peoplesNames)
+
 
 // .map
+
+let personsName = peopleInfo.map(person => person.name)
+console.log(personsName)
+
+let personNameLong = peopleInfo.map(function(person) {
+  return person.name
+})
+console.log(personNameLong)
 
 // #  4. Start with an array of numbers and create a new array with each number plus 7.
 // #     For example, [1, 2, 3] becomes [8, 9, 10]. Use .forEach and .map.
