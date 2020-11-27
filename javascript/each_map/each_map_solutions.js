@@ -3,91 +3,111 @@
 
 // .forEach
 
-let numbers = [1, 2, 3]
-let numbersTimesThree = []
+// let numbers = [1, 2, 3]
+// let numbersTimesThree = []
 
-numbers.forEach(number => numbersTimesThree.push(number * 3))
-console.log(numbersTimesThree)
+// numbers.forEach(number => numbersTimesThree.push(number * 3))
+// console.log(numbersTimesThree)
 
-let numbersTimesThreeLong = []
+// let numbersTimesThreeLong = []
 
-numbers.forEach(function (number) {
-  numbersTimesThreeLong.push(number * 3)
-})
-console.log(numbersTimesThreeLong)
+// numbers.forEach(function (number) {
+//   numbersTimesThreeLong.push(number * 3)
+// })
+// console.log(numbersTimesThreeLong)
 
 // .map
 
-const numbersTimesThreeMap = numbers.map(number => number * 3)
-console.log(numbersTimesThreeMap)
+// const numbersTimesThreeMap = numbers.map(number => number * 3)
+// console.log(numbersTimesThreeMap)
 
-const numbersTimesThreeMapLong = numbers.map(function(number) {
-  return number * 3
-})
-console.log(numbersTimesThreeMapLong)
+// const numbersTimesThreeMapLong = numbers.map(function(number) {
+//   return number * 3
+// })
+// console.log(numbersTimesThreeMapLong)
 
 // #  2. Start with an array of strings and create a new array with each string upcased.
 // #     For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"]. Use .forEach and .map.
 
 // .forEach
-let strings = ["hello", "goodbye"]
-let stringsUpcasedForEach = []
 
-strings.forEach(string => stringsUpcasedForEach.push(string.toUpperCase()))
-console.log(stringsUpcasedForEach)
+// let strings = ["hello", "goodbye"]
+// let stringsUpcasedForEach = []
 
-let stringsUpcasedForEachLong = []
-strings.forEach(function(string) {
-  stringsUpcasedForEachLong.push(string.toUpperCase())
-})
-console.log(stringsUpcasedForEachLong)
+// strings.forEach(string => stringsUpcasedForEach.push(string.toUpperCase()))
+// console.log(stringsUpcasedForEach)
+
+// let stringsUpcasedForEachLong = []
+// strings.forEach(function(string) {
+//   stringsUpcasedForEachLong.push(string.toUpperCase())
+// })
+// console.log(stringsUpcasedForEachLong)
 
 // .map
 
-const stringsUpcasedMap = strings.map(string => string.toUpperCase())
-console.log(stringsUpcasedMap)
+// const stringsUpcasedMap = strings.map(string => string.toUpperCase())
+// console.log(stringsUpcasedMap)
 
-const stringsUpcasedMapLong = strings.map(function(string) {
-  return string.toUpperCase()
-})
-console.log(stringsUpcasedMapLong)
+// const stringsUpcasedMapLong = strings.map(function(string) {
+//   return string.toUpperCase()
+// })
+// console.log(stringsUpcasedMapLong)
 
 // #  3. Start with an array of hashes and create a new array of string values from each hash's :name key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes ["Alice", "Blane"]. Use .forEach and .map.
 
 // .forEach
 
-let peopleInfo = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
-let peoplesName = []
+// let peopleInfo = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+// let peoplesName = []
 
-peopleInfo.forEach(function(person) {
-  peoplesName.push(person.name)
-})
-console.log(peoplesName)
+// peopleInfo.forEach(function(person) {
+//   peoplesName.push(person.name)
+// })
+// console.log(peoplesName)
 
-let peoplesNames = []
+// let peoplesNameLong = []
 
-peopleInfo.forEach(person => peoplesNames.push(person.name))
-console.log(peoplesNames)
-
+// peopleInfo.forEach(person => peoplesNameLong.push(person.name))
+// console.log(peoplesNameLong)
 
 // .map
 
-let personsName = peopleInfo.map(person => person.name)
-console.log(personsName)
+// let personsName = peopleInfo.map(person => person.name)
+// console.log(personsName)
 
-let personNameLong = peopleInfo.map(function(person) {
-  return person.name
-})
-console.log(personNameLong)
+// let personNameLong = peopleInfo.map(function(person) {
+//   return person.name
+// })
+// console.log(personNameLong)
 
 // #  4. Start with an array of numbers and create a new array with each number plus 7.
 // #     For example, [1, 2, 3] becomes [8, 9, 10]. Use .forEach and .map.
 
 // .forEach
 
+let numbers = [1, 2, 3]
+let numbersPlusSeven = []
+
+numbers.forEach(number => numbersPlusSeven.push(number + 7))
+console.log(numbersPlusSeven)
+
+let numbersPlusSevenLong = []
+
+numbers.forEach(function(number) {
+  numbersPlusSevenLong.push(number + 7)
+})
+console.log(numbersPlusSevenLong)
 
 // .map
+
+const numbersPlusSevenMap = numbers.map(number => number + 7)
+console.log(numbersPlusSevenMap)
+
+const numbersPlusSevenMapLong = numbers.map(function(number) {
+  return number + 7
+})
+console.log(numbersPlusSevenMapLong)
 
 // #  5. Start with an array of strings and create a new array with each string's length.
 // #     For example, ["hello", "goodbye"] becomes [5, 7]. Use .forEach and .map.
