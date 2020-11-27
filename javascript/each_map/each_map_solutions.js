@@ -86,36 +86,49 @@
 
 // .forEach
 
-let numbers = [1, 2, 3]
-let numbersPlusSeven = []
+// let numbers = [1, 2, 3]
+// let numbersPlusSeven = []
 
-numbers.forEach(number => numbersPlusSeven.push(number + 7))
-console.log(numbersPlusSeven)
+// numbers.forEach(number => numbersPlusSeven.push(number + 7))
+// console.log(numbersPlusSeven)
 
-let numbersPlusSevenLong = []
+// let numbersPlusSevenLong = []
 
-numbers.forEach(function(number) {
-  numbersPlusSevenLong.push(number + 7)
-})
-console.log(numbersPlusSevenLong)
+// numbers.forEach(function(number) {
+//   numbersPlusSevenLong.push(number + 7)
+// })
+// console.log(numbersPlusSevenLong)
 
 // .map
 
-const numbersPlusSevenMap = numbers.map(number => number + 7)
-console.log(numbersPlusSevenMap)
+// const numbersPlusSevenMap = numbers.map(number => number + 7)
+// console.log(numbersPlusSevenMap)
 
-const numbersPlusSevenMapLong = numbers.map(function(number) {
-  return number + 7
-})
-console.log(numbersPlusSevenMapLong)
+// const numbersPlusSevenMapLong = numbers.map(function(number) {
+//   return number + 7
+// })
+// console.log(numbersPlusSevenMapLong)
 
 // #  5. Start with an array of strings and create a new array with each string's length.
 // #     For example, ["hello", "goodbye"] becomes [5, 7]. Use .forEach and .map.
 
 // .forEach
 
+let strings = ["hello", "goodbye"]
+
+let stringsLength = []
+
+strings.forEach(string => stringsLength.push(string.length))
+console.log(stringsLength)
 
 // .map
+
+let stringsLengthLong = []
+
+strings.forEach(function(string) {
+  stringsLengthLong.push(string.length)
+})
+console.log(stringsLengthLong)
 
 // #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16]. Use .forEach and .map.
