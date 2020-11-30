@@ -188,6 +188,14 @@ console.log(numbersDivided)
 
 // .map
 
+const numbersDividedMap = numbers.map(number => number/2)
+console.log(numbersDividedMap)
+
+const numbersDividedMapLong = numbers.map(function (number) {
+  return number / 2
+})
+console.log(numbersDividedMapLong)
+
 // #  8. Start with an array of strings and create a new array with each string's first letter only.
 // #     For example, ["hello", "goodbye"] becomes ["h", "g"]. Use .forEach and .map.
 
