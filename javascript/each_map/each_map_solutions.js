@@ -121,14 +121,17 @@ let stringsLength = []
 strings.forEach(string => stringsLength.push(string.length))
 console.log(stringsLength)
 
-// .map
-
 let stringsLengthLong = []
 
 strings.forEach(function(string) {
   stringsLengthLong.push(string.length)
 })
 console.log(stringsLengthLong)
+
+// .map
+
+let stringsLengthMap = strings.map(string => string.length)
+console.log(stringsLengthMap)
 
 // #  6. Start with an array of hashes and create a new array of number values from each hash's :age key.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16]. Use .forEach and .map.
