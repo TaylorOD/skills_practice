@@ -217,10 +217,10 @@
 
 // .map
 
-// stringsFirstMap = strings.map(string => string[0])
+// const stringsFirstMap = strings.map(string => string[0])
 // console.log(stringsFirstMap)
 
-// stringsFirstMapLong = strings.map(function (string) {
+// const stringsFirstMapLong = strings.map(function (string) {
 //   return string[0]
 // })
 // console.log(stringsFirstMapLong)
@@ -228,36 +228,57 @@
 // # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32]. Use .forEach and .map.
 
-let peopleInfo = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
+// let peopleInfo = [{name: "Alice", age: 27}, {name: "Blane", age: 16}]
 
 // .forEach
 
-let peopleAgeTimesTwo = []
+// let peopleAgeTimesTwo = []
 
-peopleInfo.forEach(person => peopleAgeTimesTwo.push(person.age * 2))
-console.log(peopleAgeTimesTwo)
+// peopleInfo.forEach(person => peopleAgeTimesTwo.push(person.age * 2))
+// console.log(peopleAgeTimesTwo)
 
-let peopleAgeTimesTwoLong = []
+// let peopleAgeTimesTwoLong = []
 
-peopleInfo.forEach(function (person) {
-  peopleAgeTimesTwoLong.push(person.age * 2)
-})
-console.log(peopleAgeTimesTwoLong)
+// peopleInfo.forEach(function (person) {
+//   peopleAgeTimesTwoLong.push(person.age * 2)
+// })
+// console.log(peopleAgeTimesTwoLong)
 
 // .map
 
-peopleAgeTimesTwoMap = peopleInfo.map(person => person.age * 2)
-console.log(peopleAgeTimesTwoMap)
+// const peopleAgeTimesTwoMap = peopleInfo.map(person => person.age * 2)
+// console.log(peopleAgeTimesTwoMap)
 
-peopleAgeTimesTwoMapLong = peopleInfo.map(function (person) {
-  return person.age * 2
-})
-console.log(peopleAgeTimesTwoMapLong)
+// const peopleAgeTimesTwoMapLong = peopleInfo.map(function (person) {
+//   return person.age * 2
+// })
+// console.log(peopleAgeTimesTwoMapLong)
 
 // # 10. Start with an array of numbers and create a new array with each number converted into a string.
 // #     For example, [1, 2, 3] becomes ["1", "2", "3"]. Use .forEach and .map.
 
+let numbers = [1, 2, 3]
+
 // .forEach
 
+let numbersToStrings = []
+
+numbers.forEach(number => numbersToStrings.push(number.toString()))
+console.log(numbersToStrings)
+
+let numbersToStringsLong = []
+
+numbers.forEach(function (number) {
+  numbersToStringsLong.push(number.toString())
+})
+console.log(numbersToStringsLong)
 
 // .map
+
+const numbersToStringsMap = numbers.map(number => number.toString())
+console.log(numbersToStringsMap)
+
+const numbersToStringsMapLong = numbers.map(function (number) {
+  return number.toString()
+})
+console.log(numbersToStringsMapLong)
