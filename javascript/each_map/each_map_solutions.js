@@ -170,39 +170,60 @@
 // #  7. Start with an array of numbers and create a new array with each number divided by 2.
 // #     For example, [1, 2, 3] becomes [0.5, 1.0, 1.5]. Use .forEach and .map.
 
-let numbers = [1, 2, 3]
+// let numbers = [1, 2, 3]
 
 // .forEach
 
-let numbersDividedLong = []
+// let numbersDividedLong = []
 
-numbers.forEach(function(number) {
-  numbersDividedLong.push(number / 2)
-})
-console.log(numbersDividedLong)
+// numbers.forEach(function(number) {
+//   numbersDividedLong.push(number / 2)
+// })
+// console.log(numbersDividedLong)
 
-let numbersDivided = []
+// let numbersDivided = []
 
-numbers.forEach(number => numbersDivided.push(number/2))
-console.log(numbersDivided)
+// numbers.forEach(number => numbersDivided.push(number/2))
+// console.log(numbersDivided)
 
 // .map
 
-const numbersDividedMap = numbers.map(number => number/2)
-console.log(numbersDividedMap)
+// const numbersDividedMap = numbers.map(number => number/2)
+// console.log(numbersDividedMap)
 
-const numbersDividedMapLong = numbers.map(function (number) {
-  return number / 2
-})
-console.log(numbersDividedMapLong)
+// const numbersDividedMapLong = numbers.map(function (number) {
+//   return number / 2
+// })
+// console.log(numbersDividedMapLong)
 
 // #  8. Start with an array of strings and create a new array with each string's first letter only.
 // #     For example, ["hello", "goodbye"] becomes ["h", "g"]. Use .forEach and .map.
 
+let strings = ["hello", "goodbye"]
+
 // .forEach
 
+let stringsFirst = []
+
+strings.forEach(string => stringsFirst.push(string[0]))
+console.log(stringsFirst)
+
+stringsFirstLong = []
+
+strings.forEach(function (string) {
+  stringsFirstLong.push(string[0])
+})
+console.log(stringsFirstLong)
 
 // .map
+
+stringsFirstMap = strings.map(string => string[0])
+console.log(stringsFirstMap)
+
+stringsFirstMapLong = strings.map(function (string) {
+  return string[0]
+})
+console.log(stringsFirstMapLong)
 
 // # 9.  Start with an array of hashes and create a new array of number values from each hash's :age key times 2.
 // #     For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [54, 32]. Use .forEach and .map.
