@@ -1,44 +1,54 @@
 // #  1. Start with an array of numbers and create a new array with only the numbers less than 20.
 // #     For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
 
-let numbers = [2, 32, 80, 18, 12, 3] 
+// let numbers = [2, 32, 80, 18, 12, 3] 
 
-const lessThanTwenty = numbers.filter(number => number < 20)
-console.log(lessThanTwenty)
+// const lessThanTwenty = numbers.filter(number => number < 20)
+// console.log(lessThanTwenty)
 
-const lessThanTwentyLong = numbers.filter(function (number) {
-  return number < 20
-})
-console.log(lessThanTwentyLong)
+// const lessThanTwentyLong = numbers.filter(function (number) {
+//   return number < 20
+// })
+// console.log(lessThanTwentyLong)
 
 // #  2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
 // #     For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
 
-let strings = ["winner", "winner", "chicken", "dinner"]
+// let strings = ["winner", "winner", "chicken", "dinner"]
 
-const winningStrings = strings.filter(string => string[0] === "w")
-console.log(winningStrings)
+// const winningStrings = strings.filter(string => string[0] === "w")
+// console.log(winningStrings)
 
-const winningStringsLong = strings.filter(function (string) {
-  return string[0] === "w"
-})
-console.log(winningStringsLong)
+// const winningStringsLong = strings.filter(function (string) {
+//   return string[0] === "w"
+// })
+// console.log(winningStringsLong)
 
 // #  3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
 // #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
 
-let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+// let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
 
-const itemsGreaterThanFive = itemsInfo.filter(item => item.price > 5)
-console.log(itemsGreaterThanFive)
+// const itemsGreaterThanFive = itemsInfo.filter(item => item.price > 5)
+// console.log(itemsGreaterThanFive)
 
-const itemsGreaterThanFiveLong = itemsInfo.filter(function (item) {
-  return item.price > 5
-})
-console.log(itemsGreaterThanFiveLong)
+// const itemsGreaterThanFiveLong = itemsInfo.filter(function (item) {
+//   return item.price > 5
+// })
+// console.log(itemsGreaterThanFiveLong)
 
 // #  4. Start with an array of numbers and create a new array with only the even numbers.
 // #     For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+
+let numbers = [2, 4, 5, 1, 8, 9, 7]
+
+const evenNumbers = numbers.filter(number => number % 2 === 0)
+console.log(evenNumbers)
+
+const evenNumbersLong = numbers.filter(function (number) {
+  return number % 2 === 0
+})
+console.log(evenNumbersLong)
 
 // #  5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
 // #     For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
