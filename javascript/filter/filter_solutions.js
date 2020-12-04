@@ -66,18 +66,28 @@
 // #  6. Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
 // #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
 
-let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+// let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
 
-const itemNameLessThanSix = itemsInfo.filter(item => item.name.length < 6)
-console.log(itemNameLessThanSix)
+// const itemNameLessThanSix = itemsInfo.filter(item => item.name.length < 6)
+// console.log(itemNameLessThanSix)
 
-const itemNameLessThanSixLong = itemsInfo.filter(function (item) {
-  return item.name.length < 6
-})
-console.log(itemNameLessThanSixLong)
+// const itemNameLessThanSixLong = itemsInfo.filter(function (item) {
+//   return item.name.length < 6
+// })
+// console.log(itemNameLessThanSixLong)
 
 // #  7. Start with an array of numbers and create a new array with only the numbers less than 10.
 // #     For example, [8, 23, 0, 44, 1980, 3] becomes [8, 0, 3].
+
+let numbers = [8, 23, 0, 44, 1980, 3]
+
+const numbersLessThanTen = numbers.filter(number => number < 10)
+console.log(numbersLessThanTen)
+
+const numbersLessThanTenLong = numbers.filter(function (number) {
+  return number < 10
+})
+console.log(numbersLessThanTenLong)
 
 // #  8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
 // #     For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
