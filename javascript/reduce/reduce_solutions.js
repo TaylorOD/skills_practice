@@ -67,19 +67,29 @@
 // #  6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
 // #     For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes {name: "pencil", price: 1}.
 
-let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+// let itemsInfo = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
 
-const lowestPriceItem = itemsInfo.reduce(function (lowestPrice, item) {
-  if (item.price < lowestPrice) {
-    return item
-  } else {
-    return lowestPrice
-  }
-}, itemsInfo[0].price)
-console.log(lowestPriceItem)
+// const lowestPriceItem = itemsInfo.reduce(function (lowestPrice, item) {
+//   if (item.price < lowestPrice) {
+//     return item
+//   } else {
+//     return lowestPrice
+//   }
+// }, itemsInfo[0].price)
+// console.log(lowestPriceItem)
 
 // #  7. Start with an array of numbers and compute product of all the numbers.
 // #     For example, [5, 10, 8, 3] becomes 1200.
+
+let numbers = [5, 10, 8, 3]
+
+const productOfNumbers = numbers.reduce((product, number) => (product * number), 1)
+console.log(productOfNumbers)
+
+const productOfNumbersLong = numbers.reduce(function (product, number) {
+  return product * number
+}, 1)
+console.log(productOfNumbersLong)
 
 // #  8. Start with an array of strings and combine them all into a single string, separated by dashes.
 // #     For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
