@@ -1,7 +1,6 @@
 // #  1. Start with an array of numbers and compute the sum of all the numbers.
 // #     For example, [5, 10, 8, 3] becomes 26.
 
-// let numbers = [5, 10, 8, 3]
 
 // const sumNumbers = numbers.reduce(((sum, number) => sum + number), 0)
 // console.log(sumNumbers)
@@ -122,13 +121,13 @@
 // # 10. Start with an array of numbers and compute the maximum number.
 // #     For example, [5, 10, 8, 3] becomes 10.
 
-let numbersArray = [5, 10, 8, 3]
+// let numbersArray = [5, 10, 8, 3]
 
-const largestNumberInArray = numbersArray.reduce(function (targetNumber, currentNumber) {
-  if (targetNumber < currentNumber) {
-    return currentNumber
-  } else {
-    return targetNumber
-  }
-}, numbersArray[0])
-console.log(largestNumberInArray)
+// const largestNumberInArray = numbersArray.reduce(function (targetNumber, currentNumber) {
+//   if (targetNumber < currentNumber) {
+//     return currentNumber
+//   } else {
+//     return targetNumber
+//   }
+// }, numbersArray[0])
+// console.log(largestNumberInArray)

@@ -11,6 +11,14 @@
 // console.log(personInfo.lastName)
 // console.log(personInfo.email)
 
+let personInfo = {
+  firstName: "Todd",
+  lastName: "Dobbie",
+  email: "td@example.com"
+}
+
+console.log(personInfo)
+
 
 // # 2. Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
