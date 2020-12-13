@@ -49,12 +49,65 @@ console.log(bookInfo.language)
 
 // # 5. Make an array of hashes to store the title and author for 3 different books. Then print out the third book's author.
 
-// # 6. Make a hash to store 3 different states and their captitals. Then add a new state and capital and print the hash to see the result.
+let booksArray = [
+  {
+    title: "Mid-Century Ads",
+    author: "Jack Plan",
+  },
+  {
+    title: "Joy",
+    author: "Marge Jean",
+  },
+  {
+    title: "Potato",
+    author: "Tyler Farmer",
+  },
+]
+console.table(booksArray[2])
+
+// # 6. Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result.
+
+let statesAndCapitals = [
+  {
+    state: "Vermont",
+    capital: "Montpillier"
+  },
+  {
+    state: "Illinois",
+    capital: "Springfield"
+  },
+  {
+    state: "Alaska",
+    capital: "Juno"
+  },
+]
+console.log(statesAndCapitals)
+statesAndCapitals.push({ state: "South_Carolina", capital: "Greenville" })
+console.log(statesAndCapitals)
 
 // # 7. Make a hash to store a laptop's brand, model, and year. Then print each attribute on separate lines.
 
+
 // # 8. Make an array of hashes to store the brand and model for 3 different laptops. Then print out the second laptop's model.
+
 
 // # 9. Make a hash to store definitions for 2 different words. Then add a new word and definition and print the hash to see the result.
 
+let wordDefinitions = {
+  cat: "domesticated animal",
+  love_actually: "a cheesy movie"
+}
+console.log(wordDefinitions)
+wordDefinitions.camel = "A horse animal"
+console.log(wordDefinitions)
+
 // # 10. Make a hash to store a shirt's brand, color, and size. Then print each attribute on separate lines.
+
+let shirtInfo = {
+  brand: "Hanes",
+  color: "Red",
+  size: "L"
+}
+console.log(shirtInfo.brand)
+console.log(shirtInfo.color)
+console.log(shirtInfo.size)
